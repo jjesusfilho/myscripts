@@ -1,0 +1,121 @@
+You have mail.
+JOSEs-MacBook-Air:~ josedejesusfilho$ ssh root@165.227.184.135
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-97-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+21 packages can be updated.
+8 updates are security updates.
+
+
+*** System restart required ***
+Last login: Tue Nov  7 06:54:24 2017 from 189.40.40.18
+root@s2assessoria:~# sudo poweroff
+Connection to 165.227.184.135 closed by remote host.
+Connection to 165.227.184.135 closed.
+JOSEs-MacBook-Air:~ josedejesusfilho$ ssh root@165.227.184.135
+ssh: connect to host 165.227.184.135 port 22: Operation timed out
+JOSEs-MacBook-Air:~ josedejesusfilho$ ssh root@165.227.184.135
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-97-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+21 packages can be updated.
+8 updates are security updates.
+
+
+Last login: Tue Nov  7 17:50:37 2017 from 189.40.40.18
+root@s2assessoria:~# sudo apt-get -y install nginx
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libgdal1i libgeos-3.5.0 libjasper-dev
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libgd3 libxslt1.1 nginx-common nginx-core
+Suggested packages:
+  libgd-tools fcgiwrap nginx-doc ssl-cert
+The following NEW packages will be installed:
+  libgd3 libxslt1.1 nginx nginx-common nginx-core
+0 upgraded, 5 newly installed, 0 to remove and 19 not upgraded.
+Need to get 730 kB of archives.
+After this operation, 2,435 kB of additional disk space will be used.
+Get:1 http://nyc2.mirrors.digitalocean.com/ubuntu xenial-updates/main amd64 libgd3 amd64 2.1.1-4ubuntu0.16.04.8 [126 kB]
+Get:2 http://nyc2.mirrors.digitalocean.com/ubuntu xenial-updates/main amd64 libxslt1.1 amd64 1.1.28-2.1ubuntu0.1 [145 kB]
+Get:3 http://nyc2.mirrors.digitalocean.com/ubuntu xenial-updates/main amd64 nginx-common all 1.10.3-0ubuntu0.16.04.2 [26.6 kB]
+Get:4 http://nyc2.mirrors.digitalocean.com/ubuntu xenial-updates/main amd64 nginx-core amd64 1.10.3-0ubuntu0.16.04.2 [428 kB]
+Get:5 http://nyc2.mirrors.digitalocean.com/ubuntu xenial-updates/main amd64 nginx all 1.10.3-0ubuntu0.16.04.2 [3,490 B]
+Fetched 730 kB in 0s (1,520 kB/s)
+Preconfiguring packages ...
+Selecting previously unselected package libgd3:amd64.
+(Reading database ... 97706 files and directories currently installed.)
+Preparing to unpack .../libgd3_2.1.1-4ubuntu0.16.04.8_amd64.deb ...
+Unpacking libgd3:amd64 (2.1.1-4ubuntu0.16.04.8) ...
+Selecting previously unselected package libxslt1.1:amd64.
+Preparing to unpack .../libxslt1.1_1.1.28-2.1ubuntu0.1_amd64.deb ...
+Unpacking libxslt1.1:amd64 (1.1.28-2.1ubuntu0.1) ...
+Selecting previously unselected package nginx-common.
+Preparing to unpack .../nginx-common_1.10.3-0ubuntu0.16.04.2_all.deb ...
+Unpacking nginx-common (1.10.3-0ubuntu0.16.04.2) ...
+Selecting previously unselected package nginx-core.
+Preparing to unpack .../nginx-core_1.10.3-0ubuntu0.16.04.2_amd64.deb ...
+Unpacking nginx-core (1.10.3-0ubuntu0.16.04.2) ...
+Selecting previously unselected package nginx.
+Preparing to unpack .../nginx_1.10.3-0ubuntu0.16.04.2_all.deb ...
+Unpacking nginx (1.10.3-0ubuntu0.16.04.2) ...
+Processing triggers for libc-bin (2.23-0ubuntu9) ...
+Processing triggers for ureadahead (0.100.0-19) ...
+Processing triggers for ufw (0.35-0ubuntu2) ...
+Processing triggers for systemd (229-4ubuntu20) ...
+Setting up libgd3:amd64 (2.1.1-4ubuntu0.16.04.8) ...
+Setting up libxslt1.1:amd64 (1.1.28-2.1ubuntu0.1) ...
+Setting up nginx-common (1.10.3-0ubuntu0.16.04.2) ...
+Setting up nginx-core (1.10.3-0ubuntu0.16.04.2) ...
+Setting up nginx (1.10.3-0ubuntu0.16.04.2) ...
+Processing triggers for libc-bin (2.23-0ubuntu9) ...
+Processing triggers for systemd (229-4ubuntu20) ...
+Processing triggers for ureadahead (0.100.0-19) ...
+Processing triggers for ufw (0.35-0ubuntu2) ...
+root@s2assessoria:~# exit
+logout
+Connection to 165.227.184.135 closed.
+JOSEs-MacBook-Air:~ josedejesusfilho$ ssh root@67.205.163.245
+root@67.205.163.245's password: 
+"System is booting up. See pam_nologin(8)"
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-98-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+Last login: Mon Nov  6 16:21:38 2017 from 189.40.40.18
+root@ubuntu-2gb-nyc1-01:~# sudo nano /etc/nginx/sites-enabled/default
+
+  GNU nano 2.5.3      File: /etc/nginx/sites-enabled/default                    
+
+}
+
+
+server {
+
+        listen 80;
+        listen   [::]:80 default_server ipv6only=on; ## listen for ipv6
+        server_name s2assessoria.info;
+        return 301 https://$host$request_uri;
+
+}
+
