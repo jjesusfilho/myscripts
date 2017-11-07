@@ -31,7 +31,15 @@ sudo apt-get install libpoppler-cpp-dev
 
 sudo R CMD javareconf 
 
-
+## Instalando o rstudio-server
 sudo apt-get install gdebi-core
 wget https://download2.rstudio.org/rstudio-server-1.1.383-amd64.deb
 sudo gdebi rstudio-server-1.1.383-amd64.deb
+
+## Instalando o Shiny-server
+sudo su - \
+-c "R -e \"install.packages('shiny', repos='https://cran.rstudio.com/')\""
+
+wget https://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.5.5.872-amd64.deb
+sudo gdebi shiny-server-1.5.5.872-amd64.deb
+
