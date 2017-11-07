@@ -23,7 +23,7 @@ sudo apt-get install -y r-base r-base-dev r-cran-xml r-cran-rjava libcurl4-opens
 sudo apt-get install -y libssl-dev libxml2-dev openjdk-7-* libgdal-dev libproj-dev libgsl-dev
 sudo apt-get install -y xml2 default-jre default-jdk mesa-common-dev libglu1-mesa-dev freeglut3-dev 
 sudo apt-get install -y mesa-common-dev libx11-dev 
-apt-get install software-properties-common
+sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
 sudo apt-get update
 sudo apt-get install libgdal-dev libgeos-dev libproj-dev libudunits2-dev liblwgeom-dev libprotobuf-dev protobuf-compiler
@@ -33,7 +33,5 @@ sudo R CMD javareconf
 
 
 sudo apt-get install gdebi-core
-
-wget https://download2.rstudio.org/rstudio-server-1.0.153-amd64.deb
-
-sudo gdebi rstudio-server-1.0.153-amd64.deb
+wget https://download2.rstudio.org/rstudio-server-1.1.383-amd64.deb
+sudo gdebi rstudio-server-1.1.383-amd64.deb
