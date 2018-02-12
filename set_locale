@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Set locales in /etc/default/locale file
+echo "Setting locale..."
+echo "# Locale settings
+export LANGUAGE=pt_BR.UTF-8
+export LANG=pt_BR.UTF-8
+export LC_ALL=pt_BR.UTF-8">>~/.bash_profile
+
+locale-gen pt_BR.UTF-8
+
+sudo dpkg-reconfigure locales
+
+source ~/.bash_profile
