@@ -8,7 +8,7 @@ Instalação do R em três passos.
 #
 # Instructions:
 # sudo chmod 700 InstallR.sh
-# ./FirstTimeInstallR.sh
+# ./InstallR.sh
 
 # Install R
 
