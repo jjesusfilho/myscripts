@@ -1,13 +1,14 @@
 #!/bin/bash
-# Adds R to apt and install it
+# Adiciona o R ao apt e instala
 #
 # Instructions:
 # sudo chmod 700 InstallR.sh
 # ./InstallR.sh
 
-# Install R
+# Instala o R 3.5 a partir do ppa do Michael Rutter: https://launchpad.net/~marutter/+archive/ubuntu/rrutter3.5
 
-sudo echo "deb http://cran.rstudio.com/bin/linux/ubuntu xenial/" | sudo tee -a /etc/apt/sources.list
+sudo add-apt-repository ppa:marutter/rrutter3.5
+sudo apt-get update
 
 gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
 gpg -a --export E084DAB9 | sudo apt-key add -
@@ -16,15 +17,14 @@ sudo apt-get update
 sudo apt-get install -y r-base r-base-dev 
 sudo R CMD javareconf 
 
-## Instalando o rstudio-server
+## Instala a última versão do rstudio-server
 sudo apt-get install gdebi-core
-wget https://download2.rstudio.org/rstudio-server-1.1.383-amd64.deb
-sudo gdebi rstudio-server-1.1.383-amd64.deb
+wget https://download2.rstudio.org/rstudio-server-1.1.453-amd64.deb
+sudo gdebi rstudio-server-1.1.453-amd64.deb
 
-## Instalando o Shiny-server
+## Instala a versão mais recente do Shiny-server
 sudo su - \
 -c "R -e \"install.packages('shiny', repos='https://cran.rstudio.com/')\""
 
-wget https://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.5.5.872-amd64.deb
-sudo gdebi shiny-server-1.5.5.872-amd64.deb
-
+wget https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-1.5.7.907-amd64.deb
+sudo gdebi shiny-server-1.5.7.907-amd64.deb
