@@ -15,12 +15,14 @@ gpg -a --export E084DAB9 | sudo apt-key add -
   
 sudo apt-get update
 sudo apt-get install -y r-base r-base-dev 
+sudo apt-get install default-jre
+sudo apt-get install default-jdk
 sudo R CMD javareconf 
 
 ## Instala a última versão do rstudio-server
 sudo apt-get install gdebi-core
-wget https://download2.rstudio.org/rstudio-server-1.1.453-amd64.deb
-sudo gdebi rstudio-server-1.1.453-amd64.deb
+sudo wget https://download2.rstudio.org/rstudio-server-1.1.456-amd64.deb
+sudo gdebi rstudio-server-1.1.456-amd64.deb
 
 ## Instala a versão mais recente do Shiny-server
 sudo su - \
